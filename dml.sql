@@ -15,4 +15,7 @@ UPDATE cliente SET nome='Eduarda' where telefone='76789909094';
 UPDATE cliente SET nome='Dandara' where telefone='76789337909';
 UPDATE cliente SET nome='Julio Cezar' where telefone='76783466789';
 
+DELETE from cliente where telefone='96586764533';
+DELETE from cliente where telefone='76783466789';
+
 SELECT * FROM marmitex;
