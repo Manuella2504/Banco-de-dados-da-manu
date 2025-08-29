@@ -9,4 +9,10 @@ INSERT INTO cliente VALUES ('76783466789', 'Pedro', 'Barra', 'Próximo a praia',
 INSERT INTO cliente VALUES ('96586764533', 'João', 'Barra', 'Próximo a praia', '2002-02-25');
 INSERT INTO cliente VALUES ('75444356898', 'Jesus', 'Barra', 'Próximo a praia', '2000-12-25');
 
+UPDATE cliente SET nome='Juscelino' where telefone='96586764533';
+UPDATE cliente SET nome='Fabiana' where telefone='76778790987';
+UPDATE cliente SET nome='Eduarda' where telefone='76789909094';
+UPDATE cliente SET nome='Dandara' where telefone='76789337909';
+UPDATE cliente SET nome='Julio Cezar' where telefone='76783466789';
 
+SELECT * FROM marmitex;
