@@ -1,50 +1,12 @@
-/*
-Banco Marmita
-1. Inserir 10 registros em todas as tabelas.
-2. Atualizar 5 registros em todas as tabelas.
-3 - Deletar 2 registros em todas as tabelas.
-*/
-
-/*1. Inserir 10 registros em todas as tabelas.*/
-ALTER table cliente
-ADD COLUMN rua varchar(255) not null;
-
-ALTER table cliente
-ADD COLUMN numero int not null;
-
-ALTER table cliente
-ADD COLUMN pais varchar(255) not null;
-
-ALTER table cliente
-ADD COLUMN estado varchar(255) not null;
-
-ALTER table cliente
-ADD COLUMN cep varchar(255) not null;
-
-/* 2. Atualizar 5 registros em todas as tabelas.*/
-ALTER TABLE empresa
-MODIFY COLUMN telefone_cliente int not null;
-
-ALTER TABLE empresa
-MODIFY COLUMN taxa_entrega float not null;
-
-ALTER TABLE empresa
-MODIFY COLUMN data_pedido date not null;
-
-
-/* 3 - Deletar 2 registros em todas as tabelas.*/
-DELETE FROM cliente
-WHERE telefone = 71986025783;
-
-DELETE FROM entregador
-WHERE id = 1;
-
-DELETE FROM entregador
-WHERE id = 8;
-
-
-
-
-
+INSERT INTO cliente VALUES ('76789890098', 'Manuella', 'Barra', 'Próximo a praia', '2008-04-25');
+INSERT INTO cliente VALUES ('76759497878', 'Ramon', 'Barra', 'Próximo a praia', '2006-11-22');
+INSERT INTO cliente VALUES ('76779099098', 'Marcelle', 'Barra', 'Próximo a praia', '2007-11-02');
+INSERT INTO cliente VALUES ('76789890658', 'Camila', 'Barra', 'Próximo a praia', '2007-06-08');
+INSERT INTO cliente VALUES ('76778790987', 'Cátia', 'Barra', 'Próximo a praia', '2008-04-09');
+INSERT INTO cliente VALUES ('76789909094', 'Duda', 'Barra', 'Próximo a praia', '2007-05-25');
+INSERT INTO cliente VALUES ('76789337909', 'Dilma', 'Barra', 'Próximo a praia', '2008-05-11');
+INSERT INTO cliente VALUES ('76783466789', 'Pedro', 'Barra', 'Próximo a praia', '2008-10-12');
+INSERT INTO cliente VALUES ('96586764533', 'João', 'Barra', 'Próximo a praia', '2002-02-25');
+INSERT INTO cliente VALUES ('75444356898', 'Jesus', 'Barra', 'Próximo a praia', '2000-12-25');
 
 
